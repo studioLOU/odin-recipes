@@ -4,6 +4,16 @@
   border: 2px solid red;
 }
 
+/* Why do this border box on the html?
+Read more info here:
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/  */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #ffffcc;
   color: #1a001a;
